@@ -17,14 +17,23 @@
 
 </div>
 
----
-
-##  Week 9 — Final Documentation of the Complete RTL-to-GDS Flow
-
 Week 9 is fully dedicated to consolidating every stage of the VSDBabySoC development—from RTL design to final GDS.  
 This final documentation captures **all implementation steps**, **verification stages**, and **physical design results**, forming a complete tape-out ready report.
 
 ---
+## 📑 Table of Contents
+
+1️⃣ [Introduction to the VSDBabySoC](#introduction-to-the-vsdbabysoc)  
+2️⃣ [BabySoC Functional Modeling and Architecture Exploration (Week 2)](#babysoc-functional-modeling-and-architecture-exploration-week-2)  
+3️⃣ [RTL Synthesis, STA Fundamentals, and Post-Synthesis Timing Analysis (Week 3)](#rtl-synthesis-sta-fundamentals-and-post-synthesis-timing-analysis-week-3)  
+4️⃣ [Physical Design Flow — Floorplan to Routing using OpenROAD (Week 7)](#physical-design-flow--floorplan-to-routing-using-openroad-week-7)  
+5️⃣ [SPEF-Based Post-Routing STA and Final Timing Closure (Week 8)](#spef-based-post-routing-sta-and-final-timing-closure-week-8)  
+6️⃣ [Summary — Complete RTL-to-GDSII Flow Experience](#summary--complete-rtl-to-gdsii-flow-experience)  
+7️⃣ [Final Documentation (Week 0 to Week 8)](#final-documentation-week-0-to-week-8)  
+8️⃣ [Repository & Program Information](#repository--program-information)
+
+---
+
 
 ##  Introduction to the VSDBabySoC
 
@@ -1537,7 +1546,7 @@ set_input_delay -clock clk 0 {in1 in2}
 # Generate a full min/max timing report
 report_checks -path_delay min_max
 ```
-</details>
+
 
 | **Line of Code**                                     | **Purpose**             | **Explanation**                                                                              |
 | ---------------------------------------------------- | ----------------------- | -------------------------------------------------------------------------------------------- |
@@ -4159,7 +4168,9 @@ TNS analysis confirms that the design is fully timing-clean in all TT and FF cor
 
 [![Follow](https://img.shields.io/github/followers/Jayessh25?style=social)](https://github.com/Jayessh25)
 [![Stars](https://img.shields.io/github/stars/Jayessh25/Jayessh25_RISC-V-SoC-Tapeout-Program_VSD?style=social)](https://github.com/Jayessh25/Jayessh25_RISC-V-SoC-Tapeout-Program_VSD)
+
 **🔗 Program Links**
+
 [![VSD Website](https://img.shields.io/badge/VSD-Official%20Website-blue?style=flat-square)](https://vsdiat.vlsisystemdesign.com/)  
 [![Sky130](https://img.shields.io/badge/Open%20PDK-Sky130-green?style=flat-square)](https://github.com/google/skywater-pdk)  
 [![Efabless](https://img.shields.io/badge/Efabless-Platform-orange?style=flat-square)](https://efabless.com/)
