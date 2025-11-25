@@ -4166,7 +4166,7 @@ TNS analysis confirms that the design is fully timing-clean in all TT and FF cor
 **📚 Program:** VLSI System Design (VSD)
 
 [![Follow](https://img.shields.io/github/followers/Jayessh25?style=social)](https://github.com/Jayessh25)
-[![Stars](https://github.com/Jayessh25/RISC-V-SoC-Tapeout-Program_VSD)](https://github.com/Jayessh25/RISC-V-SoC-Tapeout-Program_VSD)
+[![Stars](https://img.shields.io/github/stars/Jayessh25/Jayessh25_RISC-V-SoC-Tapeout-Program_VSD?style=social)](https://github.com/Jayessh25/Jayessh25_RISC-V-SoC-Tapeout-Program_VSD)
 
 ** Program Links**
 
