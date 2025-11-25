@@ -1,7 +1,7 @@
 
 <div align="center">
 
-  #  RTL to GDS Completion of VSDBabySoC — Week 9 
+#  RTL to GDS Completion of VSDBabySoC — Week 9 
 
   ![RISC-V](https://img.shields.io/badge/RISC--V-SoC%20Tapeout-blue?style=for-the-badge&logo=riscv)
 ![VSD](https://img.shields.io/badge/VSD-Program-orange?style=for-the-badge)
@@ -4161,12 +4161,12 @@ TNS analysis confirms that the design is fully timing-clean in all TT and FF cor
 
 <div align="center">
 
-**📂 Repository:** [Jayessh25_RISC-V-SoC-Tapeout-Program_VSD](https://github.com/Jayessh25/Jayessh25_RISC-V-SoC-Tapeout-Program_VSD)  
+**📂 Repository:** [RISC-V-SoC-Tapeout-Program_VSD](https://github.com/Jayessh25/RISC-V-SoC-Tapeout-Program_VSD)  
 **👨‍💻 Author:** [Jayessh25](https://github.com/Jayessh25)  
 **📚 Program:** VLSI System Design (VSD)
 
 [![Follow](https://img.shields.io/github/followers/Jayessh25?style=social)](https://github.com/Jayessh25)
-[![Stars](https://img.shields.io/github/stars/Jayessh25/Jayessh25_RISC-V-SoC-Tapeout-Program_VSD?style=social)](https://github.com/Jayessh25/Jayessh25_RISC-V-SoC-Tapeout-Program_VSD)
+[![Stars](https://github.com/Jayessh25/RISC-V-SoC-Tapeout-Program_VSD)](https://github.com/Jayessh25/RISC-V-SoC-Tapeout-Program_VSD)
 
 ** Program Links**
 
