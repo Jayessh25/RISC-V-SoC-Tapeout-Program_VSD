@@ -26,7 +26,7 @@ This final documentation captures **all implementation steps**, **verification s
 1️⃣ [Introduction to the VSDBabySoC](#introduction-to-the-vsdbabysoc)  
 2️⃣ [BabySoC Functional Modeling and Architecture Exploration (Week 2)](#babysoc-functional-modeling-and-architecture-exploration)  
 3️⃣ [RTL Synthesis, STA Fundamentals, and Post-Synthesis Timing Analysis (Week 3)](#rtl-synthesis-sta-fundamentals-and-post-synthesis-timing-analysis)  
-4️⃣ [Physical Design Flow — Floorplan to Routing using OpenROAD (Week 7)](#physical-design-flow--floorplan-to-routing-using-openroad)  
+4️⃣ [Physical Design Flow — Synthesis to Routing using OpenROAD (Week 7)](#physical-design-flow-from-synthesis-to-routing-using-openroad)  
 5️⃣ [SPEF-Based Post-Routing STA and Final Timing Closure (Week 8)](#spef-based-post-routing-sta-and-final-timing-closure)  
 6️⃣ [Summary — Complete RTL-to-GDSII Flow Experience](#summary--complete-rtl-to-gdsii-flow-experience)  
 7️⃣ [Final Documentation (Week 0 to Week 8)](#final-documentation-week-0-to-week-8)  
@@ -1949,7 +1949,7 @@ Validate whether the post-synthesis BabySoC meets timing across corners and iden
 
 
 ---
-# Physical Design Flow — Synthesis to Routing with OpenROAD
+# Physical Design Flow from Synthesis to Routing with OpenROAD
 
 Week 7 marked the beginning of physical design using the OpenROAD-Flow-Scripts environment, covering floorplanning, placement, clock tree synthesis, and routing for the VSDBabySoC. Floorplanning defined the die/core dimensions, IO pin arrangement, power distribution strategy, and placement of large macros such as the DAC and PLL. Standard-cell placement was then performed to minimize wirelength and congestion, followed by CTS to deliver a balanced, low-skew clock tree. The routing stage completed full interconnect implementation while adhering to DRC rules. After routing, the design database (.odb) was exported into .def format for visualization and signoff processing. Post-route SPEF extraction captured wiring parasitics, enabling accurate timing analysis.
 
