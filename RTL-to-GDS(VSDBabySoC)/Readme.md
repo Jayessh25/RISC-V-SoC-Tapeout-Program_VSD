@@ -24,7 +24,7 @@ This final documentation captures **all implementation steps**, **verification s
 ## 📑 Table of Contents
 
 1️⃣ [Introduction to the VSDBabySoC](#introduction-to-the-vsdbabysoc)  
-2️⃣ [BabySoC Functional Modeling and Architecture Exploration (Week 2)](1-babysoc-functional-modeling-and-architecture-exploration)  
+2️⃣ [BabySoC Functional Modeling and Architecture Exploration (Week 2)](#1-babysoc-functional-modeling-and-architecture-exploration)  
 3️⃣ [RTL Synthesis, STA Fundamentals, and Post-Synthesis Timing Analysis (Week 3)](#rtl-synthesis-sta-fundamentals-and-post-synthesis-timing-analysis-week-3)  
 4️⃣ [Physical Design Flow — Floorplan to Routing using OpenROAD (Week 7)](#physical-design-flow--floorplan-to-routing-using-openroad-week-7)  
 5️⃣ [SPEF-Based Post-Routing STA and Final Timing Closure (Week 8)](#spef-based-post-routing-sta-and-final-timing-closure-week-8)  
