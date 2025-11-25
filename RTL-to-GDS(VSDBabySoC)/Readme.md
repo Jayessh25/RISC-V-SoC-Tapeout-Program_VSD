@@ -28,12 +28,11 @@ This final documentation captures **all implementation steps**, **verification s
 3️⃣ [RTL Synthesis, STA Fundamentals, and Post-Synthesis Timing Analysis (Week 3)](#rtl-synthesis-sta-fundamentals-and-post-synthesis-timing-analysis)  
 4️⃣ [Physical Design Flow — Synthesis to Routing using OpenROAD (Week 7)](#physical-design-flow-from-synthesis-to-routing-using-openroad)  
 5️⃣ [SPEF-Based Post-Routing STA and Final Timing Closure (Week 8)](#spef-based-post-routing-sta-and-final-timing-closure)  
-6️⃣ [Summary — Complete RTL-to-GDSII Flow Experience](#summary--complete-rtl-to-gdsii-flow-experience)  
-7️⃣ [Final Documentation (Week 0 to Week 8)](#final-documentation-week-0-to-week-8)  
+6️⃣ [Summary ](#summary)  
+7️⃣ [Final Documentation (Week 0 to Week 8)](#final-documentation-file-of-week-0-to-week-8)  
 8️⃣ [Repository & Program Information](#repository--program-information)
 
 ---
-
 
 ##  Introduction to the VSDBabySoC
 
@@ -1949,7 +1948,7 @@ Validate whether the post-synthesis BabySoC meets timing across corners and iden
 
 
 ---
-# Physical Design Flow from Synthesis to Routing with OpenROAD
+# Physical Design Flow from Synthesis to Routing using OpenROAD
 
 Week 7 marked the beginning of physical design using the OpenROAD-Flow-Scripts environment, covering floorplanning, placement, clock tree synthesis, and routing for the VSDBabySoC. Floorplanning defined the die/core dimensions, IO pin arrangement, power distribution strategy, and placement of large macros such as the DAC and PLL. Standard-cell placement was then performed to minimize wirelength and congestion, followed by CTS to deliver a balanced, low-skew clock tree. The routing stage completed full interconnect implementation while adhering to DRC rules. After routing, the design database (.odb) was exported into .def format for visualization and signoff processing. Post-route SPEF extraction captured wiring parasitics, enabling accurate timing analysis.
 
@@ -3540,8 +3539,8 @@ Week 7 focuses on running the complete RTL to GDSII flow for the VSDBabySoC usin
 </details>
 
 ---
-# SPEF-Based Post-Routing Analysis and Final Timing Closure
-  
+# SPEF-Based Post-Routing STA and Final Timing Closure
+
  Finally, Week 8 focused on post-routing STA and timing closure using the extracted SPEF parasitics. This stage evaluated real delays caused by interconnect resistance, capacitance, and coupling effects across multiple PVT corners. Setup and hold slacks were analyzed to ensure that the post-layout design met timing requirements under realistic conditions. Any deviations from the pre-route timing were examined, allowing insights into how placement, routing, and parasitics affect the overall performance of the SoC. With timing closure achieved, the VSDBabySoC design reached a tape-out–ready stage, completing the RTL-to-GDS design flow.
 
 If u want to see in detail **(CLICK BELOW)**
@@ -4148,13 +4147,13 @@ TNS analysis confirms that the design is fully timing-clean in all TT and FF cor
 </details>
 
 ---
-# Summary:
+# Summary
 
  Throughout this project, I gained complete hands-on experience in the full RTL-to-GDSII flow using the VSDBabySoC. I began with understanding the SoC architecture, RISC-V core, peripheral interactions, and functional modeling in Week 2. In Week 3, I moved to RTL synthesis, gate-level simulation, and post-synthesis STA, learning how synthesis optimizations affect timing and functionality. Week 7 introduced me to the physical design stages—floorplanning, placement, CTS, and routing—using OpenROAD, where I implemented the full physical layout and optimized congestion and clock distribution. In Week 8, I performed post-route STA with SPEF parasitics, analyzed setup/hold slacks across PVT corners, and completed timing closure. Overall, I learned every major step from RTL design to final GDS generation, gaining a complete understanding of how an SoC moves from functional behavior to tape-out-ready silicon.
 
 ---
 
-## 🔗 Final Documentation File  of week 0 to week 8
+## Final Documentation File  of week 0 to week 8
 
 👉 [VSDBabySoC RTL-to-GDS documentation](https://github.com/VEERARAGAVAN7/VSD_SoC_Tapeout_Week9/blob/main/week9_final_documentation.md)
 
@@ -4169,7 +4168,7 @@ TNS analysis confirms that the design is fully timing-clean in all TT and FF cor
 [![Follow](https://img.shields.io/github/followers/Jayessh25?style=social)](https://github.com/Jayessh25)
 [![Stars](https://img.shields.io/github/stars/Jayessh25/Jayessh25_RISC-V-SoC-Tapeout-Program_VSD?style=social)](https://github.com/Jayessh25/Jayessh25_RISC-V-SoC-Tapeout-Program_VSD)
 
-**🔗 Program Links**
+** Program Links**
 
 [![VSD Website](https://img.shields.io/badge/VSD-Official%20Website-blue?style=flat-square)](https://vsdiat.vlsisystemdesign.com/)  
 [![Sky130](https://img.shields.io/badge/Open%20PDK-Sky130-green?style=flat-square)](https://github.com/google/skywater-pdk)  
