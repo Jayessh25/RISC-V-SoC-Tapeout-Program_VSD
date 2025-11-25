@@ -1020,7 +1020,7 @@ Copy code
 > 🛠️ *If logic defines “what” a chip does, STA defines “how fast and safely” it can do it.
 
 </details>
-
+---
 <details> <summary><strong> Week 3 Part 3: Static Timing Analysis: “BabySOC” </strong></summary> 
 
  #  Week 3 Part 3: Static Timing Analysis: “BabySOC”
