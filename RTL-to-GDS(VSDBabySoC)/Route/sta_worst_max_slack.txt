@@ -1,0 +1,8 @@
+sky130_fd_sc_hd__tt_025C_1v80.lib
+sky130_fd_sc_hd__tt_025C_1v80.lib
+sky130_fd_sc_hd__tt_025C_1v80.lib
+worst slack max 6.1044
+sky130_fd_sc_hd__tt_025C_1v80.lib
+worst slack max 6.1044
+sky130_fd_sc_hd__tt_025C_1v80.lib
+worst slack max 6.1044
