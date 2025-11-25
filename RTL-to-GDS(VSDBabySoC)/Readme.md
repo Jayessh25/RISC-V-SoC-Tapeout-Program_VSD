@@ -413,10 +413,6 @@ This zoomed-out view shows the DAC producing a waveform-like analog signal (inst
 - For/Generate loops → scalable Verilog coding
 - Tools: Icarus Verilog + GTKWave
   
----
-
-
----
 </details>
 
 ---
