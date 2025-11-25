@@ -24,7 +24,7 @@ This final documentation captures **all implementation steps**, **verification s
 ## 📑 Table of Contents
 
 1️⃣ [Introduction to the VSDBabySoC](#introduction-to-the-vsdbabysoc)  
-2️⃣ [BabySoC Functional Modeling and Architecture Exploration (Week 2)](#1]-babysoc-functional-modeling-and-architecture-exploration)  
+2️⃣ [BabySoC Functional Modeling and Architecture Exploration (Week 2)](#babysoc-functional-modeling-and-architecture-exploration)  
 3️⃣ [RTL Synthesis, STA Fundamentals, and Post-Synthesis Timing Analysis (Week 3)](#rtl-synthesis-sta-fundamentals-and-post-synthesis-timing-analysis-week-3)  
 4️⃣ [Physical Design Flow — Floorplan to Routing using OpenROAD (Week 7)](#physical-design-flow--floorplan-to-routing-using-openroad-week-7)  
 5️⃣ [SPEF-Based Post-Routing STA and Final Timing Closure (Week 8)](#spef-based-post-routing-sta-and-final-timing-closure-week-8)  
@@ -41,7 +41,7 @@ This final documentation captures **all implementation steps**, **verification s
   The VSDBabySoC is a compact yet complete system-on-chip that integrates a lightweight RISC-V processor core along with essential digital logic, peripheral components, and custom analog IPs within the Sky130 open-source technology node. Designed as an educational and research-friendly SoC, it demonstrates the full journey from RTL description to a manufacturable GDSII layout. The architecture focuses on clean modular interaction—where the processor, memory subsystem, clocking circuits, and mixed-signal blocks work together through well-defined buses and control pathways—allowing clear visibility into signal flow and functional partitioning. By understanding these structural relationships early in the design, the path to synthesis, physical design, timing verification, and parasitic-aware optimization becomes significantly more intuitive. This introductory section therefore sets the groundwork for the subsequent stages of the design flow, ensuring a smooth transition from high-level functionality to silicon-ready implementation.
 
 ---
-# 1] BabySoC Functional Modeling and Architecture Exploration
+# BabySoC Functional Modeling and Architecture Exploration
   
  The VSDBabySoC project begins by establishing a strong foundation in SoC architecture and functional modeling, focusing on understanding the RISC-V core, system components, and overall block-level interactions. Week 2 introduced the BabySoC fundamentals, emphasizing how the processor, memory system, clocking blocks, and analog IPs integrate within the Sky130 ecosystem. Functional modeling of each module ensured that the early representations of the SoC captured the intended behavior, enabling fast debugging before moving into full RTL development. This phase also clarified the datapath flow and control-signal interactions, forming the conceptual backbone for later synthesis and physical design stages.
 
@@ -421,7 +421,7 @@ This zoomed-out view shows the DAC producing a waveform-like analog signal (inst
 </details>
 
 ---
-# 2 RTL Synthesis, STA Fundamentals, and Post-Synthesis Timing Analysis
+# RTL Synthesis, STA Fundamentals, and Post-Synthesis Timing Analysis
   
  Building on the functional understanding, Week 3 shifted into RTL verification, post-synthesis validation, and timing fundamentals. The RTL was synthesized using Sky130 standard cells and its resulting gate-level netlist was verified through Gate-Level Simulation (GLS). This ensured that logic optimization during synthesis did not alter functional correctness. Static Timing Analysis (STA) was then introduced to understand timing margins, critical paths, setup/hold behavior, and constraint-driven optimization. These analyses created the baseline timing profile that would later be compared against post-layout timing after parasitic extraction. This week solidified the transition from RTL modeling to timing-accurate digital implementation.
 
@@ -1949,7 +1949,7 @@ Validate whether the post-synthesis BabySoC meets timing across corners and iden
 
 
 ---
-# 3.Physical Design Flow — Synthesis to Routing with OpenROAD
+# Physical Design Flow — Synthesis to Routing with OpenROAD
 
 Week 7 marked the beginning of physical design using the OpenROAD-Flow-Scripts environment, covering floorplanning, placement, clock tree synthesis, and routing for the VSDBabySoC. Floorplanning defined the die/core dimensions, IO pin arrangement, power distribution strategy, and placement of large macros such as the DAC and PLL. Standard-cell placement was then performed to minimize wirelength and congestion, followed by CTS to deliver a balanced, low-skew clock tree. The routing stage completed full interconnect implementation while adhering to DRC rules. After routing, the design database (.odb) was exported into .def format for visualization and signoff processing. Post-route SPEF extraction captured wiring parasitics, enabling accurate timing analysis.
 
@@ -3540,7 +3540,7 @@ Week 7 focuses on running the complete RTL to GDSII flow for the VSDBabySoC usin
 </details>
 
 ---
-# 4. SPEF-Based Post-Routing Analysis and Final Timing Closure
+# SPEF-Based Post-Routing Analysis and Final Timing Closure
   
  Finally, Week 8 focused on post-routing STA and timing closure using the extracted SPEF parasitics. This stage evaluated real delays caused by interconnect resistance, capacitance, and coupling effects across multiple PVT corners. Setup and hold slacks were analyzed to ensure that the post-layout design met timing requirements under realistic conditions. Any deviations from the pre-route timing were examined, allowing insights into how placement, routing, and parasitics affect the overall performance of the SoC. With timing closure achieved, the VSDBabySoC design reached a tape-out–ready stage, completing the RTL-to-GDS design flow.
 
